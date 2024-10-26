@@ -258,7 +258,8 @@ h1{
     }
 
     .wrapper {
-        padding: 10px;
+        padding: 20px;
+        overflow:hidden;
     }
 
     .grant-location-container p:first-of-type {
