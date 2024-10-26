@@ -1,0 +1,319 @@
+
+* {
+    border: none; /* Removes borders from all elements */
+    padding: 0;   /* Removes padding from all elements */
+    margin: 0;    /* Optionally, you might want to reset the margin too */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width/height */
+}
+.current_class{
+    background-color: #E9EED9;
+    border-radius: 4px;
+    background-size: cover;
+    display: block;
+}
+.active{
+    opacity: 1;
+    scale:1;
+    display: block;
+}
+.tab-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 22px;
+    border-radius: 20px;
+    box-shadow: #54473F;
+    font-weight:300;
+    font-family: "Prociono", serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #CBD2A4;
+    width: 50vw;
+    border-radius: 20px;
+    height: 80vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grant-location-container{
+    display: none;
+}
+.grant-location-container.active{
+    display: block;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grant-location-container img{
+    margin-bottom: 2rem;
+   height: 5 rem;
+    border-radius:50%;
+    width: 5 rem;
+}
+.grant-location-container p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.grant-location-container p:last-of-type{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+.search-weather{
+    display: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-weather.active{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    width: 30rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loading-container{
+    display: none;
+}
+.loading-container.active{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    font-size: 22px;
+}
+.wrapper{
+    background-color: #54473F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main_display{
+    display: none;
+    position: relative;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_display.active{
+    display: block;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:300px;
+}
+.name{
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.name p{
+    font-size: 2 rem;
+}
+.name img{
+    visibility: hidden;
+}
+
+.three_displays{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 22px;
+   visibility: hidden;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.three_displays.active{
+    visibility: visible;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.temperature{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+h1{
+    position: relative;
+    font-family: "Prociono", serif;
+}
+.inputSpace{
+    height: 30px;
+    width:3000px;
+    font-size: 22px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color:#E9EED9 ;
+}
+.searchBtn{
+    all: unset;
+    background-color:#E9EED9 ;
+    height:30px;
+    width: 30px;
+}
+.usertab{
+    padding: 10px;
+}
+.searchtab{
+    padding:10px;
+}
+.grant_access_button{
+    all:unset;    /*remove default styling*/
+    border-radius: 10px;
+    background-color: #E9EED9;
+    height: 30px;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+ 
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.background{
+    background-color: #E9EED9;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    box-shadow: #54473F;
+    height: 7rem;
+    width: 10rem;
+}
+.temperature{
+    font-size: 40px;
+    font-weight: 700;
+}
+.search-weather input{
+    all: unset;
+    height: 0.1rem;
+    padding: 20px;
+    width: 250px;
+}
+.search-weather input:focus{
+    border: 2px solid aliceblue;
+}
+.search-weather input::placeholder{
+    font-size: 22px;
+    font-weight: 600;
+}
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .tab-container {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .container {
+        width: 90vw;
+        height: auto; 
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+
+    .grant-location-container p:first-of-type {
+        font-size: 1.5rem;
+    }
+
+    .grant-location-container p:last-of-type {
+        font-size: 1rem;
+    }
+
+    .search-weather {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 10px;
+        width: 70%; /* Full width on mobile */
+        max-width: 70%; /* Prevents overflow */
+        margin: 10px auto;
+    }
+   .search-weather input{
+    width: 12rem;
+   }
+    .inputSpace {
+        max-width: 280px;   /* Set a maximum width for mobile */
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .main_display {
+        margin: 10px;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .three_displays {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .temperature {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .grant_access_button {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .background {
+        height: 5rem;
+        width: 8rem;
+        padding: 10px;
+    }
+}

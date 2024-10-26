@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container" style="padding: 30px;">
+            <h1 class="bg-red">Weather App</h1>
+
+            <div class="tab-container cursor-pointer flex flex-row gap-6">
+                <p class="usertab cursor-pointer">Your Weather</p>
+                <p class="searchtab cursor-pointer">Search Weather</p>
+            </div>
+            
+            <div class="weather-container">
+                <div class="grant-location-container">
+                    <img src="./locn image.png" height="80px" width="80px" alt="" loading="lazy">
+                    <p>Grant location access</p>
+                    <p>Allow access to get weather information</p>
+                    <button class="grant_access_button">Grant Access</button>
+                </div>
+                <div class="search-weather">
+                    <input type="text" placeholder="Search your city..." class="inputSpace" >
+                    <button class="searchBtn"  style="border-radius: 50%; ">
+                        <img src="./search.png" height="30px" width="30px" alt="" class="bg-no-repeat bg-cover" loading="lazy" style="border-radius: 50%;">
+                    </button>
+                </div>
+                <div class="loading-container">
+                    <img src="./loading gif.gif" height="150" widht="150" alt="">
+                    <p>Loading</p>
+                </div>
+                <!--main display of weather , your and search both ka result-->
+            <div class="main-display">
+                <div class="content">
+                <div class="name" style="display: flex; flex-direction: row;">
+                    <p class="city_name"></p>
+                    <img src="" class="flag" alt="" loading="lazy">
+                </div>
+                
+                <p class="description"></p>
+              <img src="" class="weather_icon" alt="" loading="lazy">
+              <p class="temperature"></p>
+            </div>
+              <div class="three_displays"  style="display: flex; justify-content: center; align-items: center" >
+                <div class="background">
+                    <img src="./windspeed icon.png" height="20px" width="20px" alt="" class="windspeed_icon" loading="lazy">
+                    <p>Windspeed</p>
+                    <p class="windspeed"></p> <!--only this is dynamic, so only this is fetched-->
+                </div>
+                <div class="background">
+                    <img src="./humidity icon.png" height="20px" width="20px" alt="" loading="lazy">
+                    <p>Humidity</p>
+                    <p class="humidity"></p>
+                </div>
+                <div class="background">
+                    <img src="./clouds.png" height="20px" width="20px" alt="" loading="lazy">
+                    <p>Clouds</p>
+                    <p class="clouds"></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
